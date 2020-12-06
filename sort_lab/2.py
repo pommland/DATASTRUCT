@@ -4,7 +4,14 @@ def selectionSort(data, n):
 	else :
 		temp = max(data[:n+1])
 		data[data.index(temp)] = data[n]
-		data[n] = temp		
+		a = data[n]
+		if temp != data[n] :
+			print(f'swap {data[n]} <-> {temp} : ',end='')
+		data[n] = temp
+		if temp != a :
+			print(data)
+		
+			
 	selectionSort(data,n-1)
 
 

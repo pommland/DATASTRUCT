@@ -5,59 +5,53 @@ class Node:
         self.right = None
 
 
-
 class BST():
- 
     def insert(self,root,val):
         if not root :
             return Node(val)
-        if  val >= root.val :
+        
+        if val >= root.val:
             root.right = self.insert(root.right,val)
-        else:
+        else :
             root.left = self.insert(root.left,val)
         return root
     
- 
-    
     def delete(self,root,val):
-        if not root:
-            return root
+        if not root :
+            return root 
         if val > root.val:
             root.right = self.delete(root.right, val)
         elif val < root.val:
             root.left = self.delete(root.left, val)
         else :
-            if not root.right:
+            if not root.right :
                 temp = root.left
                 root.left = None
                 return temp
-            
-            if not root.left:
+            if not root.left :
                 temp = root.right
                 root.right = None
                 return temp
             temp = minValueNode(root.right)
             root.val = temp.val
-            root.right = self.delete(root.right, temp.val)
+            root.right = self.delete(root.right, root.val)
 
         return root
 
-    
 def minValueNode(r):
     if not r:
-        return r
+        return r                   
     
     while r.left:
         r = r.left
 
     return r
 
-def printTree90(root, level=0):
-    if root:
-        printTree90(root.right, level + 1)
-        print('    ' * level, root.val)
-        printTree90(root.left, level + 1)
-
+def printTree90(root,level = 0):
+    if root :
+        printTree90(root.right,level+1)
+        print("     "* level,root.val)
+        printTree90(root.left,level+1)
 
 
 if __name__ == "__main__":

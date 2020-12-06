@@ -47,6 +47,16 @@ def selection(li):
                 c_j = i
 
         li[i],li[c_j] = li[c_j] ,  li[i]
+
+def insertion(li):
+    for i in range(1,len(li)):
+        temp = li[i]
+        for j in range(i,-1,-1):
+            if li[j-1] > li[j] and j>0:
+                li[j-1] , li[j] = li[j] , li[j-1]
+            else :
+                li[j] = temp
+                break
  
 
 input_data = [int(x) for x in input("Enter input : ").split(" ")]
