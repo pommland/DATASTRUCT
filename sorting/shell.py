@@ -11,5 +11,6 @@ def shell(li,dIncrements):
                 else :
                     li[j] = temp
                     break
+
 shell(li,[5,3,1])
 print(li)

@@ -53,14 +53,14 @@ def bubble(lst):
 #              Call mergeSort(arr, m+1, r)
 #      4. Merge the two halves sorted in step 2 and 3:
 #              Call merge(arr, l, m, r)
-def merge(items):
-    if len(items) > 1:
-        m = len(items) // 2
-        r = merge(items[:m])
-        l = merge(items[m:])
+def merge(li):
+    if len(li) > 1:
+        m = len(li) // 2
+        r = merge(li[:m])
+        l = merge(li[m:])
 
         lst = []
-        while len(lst) < len(items):
+        while len(lst) < len(li):
             rP = r[0] if len(r) > 0 else None
             lP = l[0] if len(l) > 0 else None
             if lP == None:
@@ -73,7 +73,7 @@ def merge(items):
                 lst.append(r.pop(0))
         return lst
     else:
-        return items
+        return li
 
 # This function takes last element as pivot, places 
 # the pivot element at its correct position in sorted 
@@ -133,12 +133,12 @@ def quick(items, low, high):
         
 
 if __name__ == '__main__':
-    # print(selection([1, 6, 99, 2, 3]))
+    print(selection([1, 6, 99, 2, 3]))
     # print(insertion([1, 6, 99, 2, 3]))
     # print(bubble([1, 6, 99, 2, 3]))
     # print(merge([1, 6, 99, 2, 3, 6, 4]))
     # print(shell([1, 6, 99, 2, 3], [5, 3, 1]))
-    items = [10, 7, 8, 9, 1, 5]
-    quick(items, 0, len(items) - 1)
-    print(items)
+    # items = [10, 7, 8, 9, 1, 5]
+    # quick(items, 0, len(items) - 1)
+    # print(items)
 

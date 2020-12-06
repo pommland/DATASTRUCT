@@ -1,0 +1,665 @@
+
+<!-- saved from url=(0064)http://161.246.127.86/20s1ds/index.php/student/lab_exercise/17/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>﻿
+
+
+	<title>KCE_DS_Student</title>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="./KCE_DS_Student2_files/bootstrap.min.css">
+	<link href="./KCE_DS_Student2_files/auth_custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./KCE_DS_Student2_files/codemirror.css">
+	<script type="text/javascript" src="./KCE_DS_Student2_files/codemirror.js.download"></script>
+	<script type="text/javascript" src="./KCE_DS_Student2_files/clike.js.download"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */ 
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	#page-content {
+		margin-top:95px;
+	}
+  </style>
+
+
+<!--  NAV TOP  -->
+<div class="container-fluid">
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header">
+		
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<!-- <a class="navbar-brand" href="#">Logo</a> -->
+
+			<img height="80px" width="80px" src="./KCE_DS_Student2_files/logo1.png">
+
+		</div>
+
+		<div class="navbar-text" style="margin-top:0px;padding-top:0px">
+			<h3>Programming Lab Management System</h3>
+			<h5>King Mongkut's Institute of Technolygy Ladkrabang</h5>
+		</div>
+    
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right" style="padding-top:15px;">
+				<li class="active"><a href="http://161.246.127.86/20s1ds/index.php/student/index">Home</a></li>
+				<li><a href="http://161.246.127.86/20s1ds/index.php/student/exercise_home">Exercise</a></li>
+				<!-- <li><a href="#">Layout</a></li> -->
+				<li><a href="http://161.246.127.86/20s1ds/index.php/student/edit_profile_form">Edit profile</a></li>
+
+				<li class="dropdown">
+				<a href="http://161.246.127.86/20s1ds/index.php/student/lab_exercise/17/2#" class="dropdown-toggle" data-toggle="dropdown" title="ความช่วยเหลือ">Help <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				<li>
+				<a href="http://161.246.127.86/20s1ds/index.php/student/show_lab_exercise" title="อ่านฉันก่อน"><i class="icon-list"></i> How to use First step</a>
+				</li>
+				<li>
+				<a href="http://161.246.127.86/20s1ds/index.php/student/lab_exercise/17/2#"><i class="icon-support"></i> Useful link</a>
+				</li>
+				<li>
+				<a href="http://161.246.127.86/20s1ds/index.php/student/lab_exercise/17/2#"><i class="icon-support"></i> About</a>
+				</li>
+				</ul>
+				</li>
+				<li><a class="btn btn-default btn-lg" href="http://161.246.127.86/20s1ds/index.php/auth/logout"> 
+				<span class="glyphicon glyphicon-log-out"></span> Log out </a></li>
+			</ul>
+		</div>
+  </div>
+  
+</div>
+<!-- /. NAV TOP  -->
+ 
+
+<!-- Page Contents -->
+<div class="container-fluid " style="background-color:GhostWhite">	
+	<!-- row content -->
+	<div class="row content">
+<!-- nav_sideleft -->
+
+<div class="col-sm-2 sidenav text-center" style="padding-top:10px;margin-top:100px;">
+	<div class="affix" style="background-color:Pink; min-width: 15%; "><!-- -->
+
+		<div class="panel panel-default" style="background-color:AliceBlue; height:1024px;">
+			<img src="./KCE_DS_Student2_files/image_62010472_5f2cfcb74e99e.jpg" style="width:180px;height:216px;padding-top:20px">
+			
+			<div class="row" style="margin-top:10px">
+				<p>กลุ่มที่ : 101 </p>
+				<p>รหัสนักศึกษา : 62010472 </p>
+			</div>
+				
+
+			<div class="row">
+				
+					<p>นาย นวพรรษ  ศรีบุญเรือง					</p>
+			</div>
+			<div class="row">			
+				<p>ปอม</p>
+			</div>
+
+			<div class="row">			
+				<p>วิศวกรรมคอมพิวเตอร์</p>
+			</div>
+			
+			
+			<!--
+			<div class="row">			
+				<p></p>
+			</div>
+			<!---->
+			
+
+
+
+			
+		</div>
+	</div>
+
+	
+</div>
+<!-- nav_sideleft -->
+		
+		
+
+<!-- nav_body -->
+<div class="col-lg-10 col-md-10 col-sm-10 kpanel_body" style="margin-top:120px;">
+	<div class="row">
+		<div class="col-lg-1">
+		</div> 
+		<!-- <pre>Array
+(
+    [__ci_last_regenerate] => 1606469096
+    [username] => 62010472
+    [id] => 62010472
+    [role] => student
+    [added] => 2020-08-07 08:51:44
+    [last_login] => 2020-11-27 16:24:56
+    [last_seen] => 2020-11-27 16:24:56
+    [status] => online
+    [active] => yes
+    [added_by] => kiatnarong
+    [ci_session] => 1606469096
+    [session_id] => 097d5ae08a6ebc2e06e6e65b9b1b10852df40140
+    [logged_in] => 1
+    [stu_id] => 62010472
+    [stu_gender] => male
+    [stu_firstname] => นวพรรษ
+    [stu_lastname] => ศรีบุญเรือง
+    [stu_nickname] => ปอม
+    [stu_dob] => 2001-01-29
+    [stu_avatar] => image_62010472_5f2cfcb74e99e.jpg
+    [stu_email] => 62010472@kmitl.ac.th
+    [stu_tel] => 0845457824
+    [stu_group] => 20010101
+)
+</pre> --> 
+		
+		<div class="col-lg-10">
+			<div class="panel panel-primary" style="min-width:800px;">
+				<div class="panel-heading">
+					 <div class="row">
+						<div class="col-xs-1">
+							<div><button type="button" class="btn btn-warning">ไม่สามารถส่งได้</button></div>
+						</div>
+
+						<div class="col-xs-7">
+							<h2>Chapter : 17 - item : 2 - insertion sort 2</h2>
+						</div>
+						
+						<div class="col-xs-4">
+							<button class="btn btn-info btn-lg">คะแนน : 2 / 2</button>
+							<p class="badge">ส่งมาแล้ว 3 ครั้ง</p>
+						</div>						
+
+					</div>
+				</div>
+
+				<div style="display:inline-block;"></div>
+
+				<div class="panel-body">
+					<p></p><p>ให้เขียนโปรแกรม insertion sort แล้วแสดงผลลัพธ์ ตามตัวอย่าง</p><pre style="line-height: 1.42857;"> *** Insertion sort ***
+Enter some numbers : 1 2 3 4
+
+[1, 2, 3, 4]
+Data comparison =  3</pre><p><br></p><pre style="line-height: 1.42857;"> *** Insertion sort ***
+Enter some numbers : 4 3 2 1
+
+[1, 2, 3, 4]
+Data comparison =  6
+</pre><div><br style="color: rgb(51, 51, 51);"></div><p></p>
+				</div>
+								
+				
+			</div>
+		</div>
+		<div class="col-lg-1">
+		</div>
+	</div>
+	<!--- --->
+	<div class="row" style="display:inline-block;">
+				<form action="http://161.246.127.86/20s1ds/index.php/student/exercise_submission" method="post" accept-charset="utf-8" id="exercise_submission" enctype="multipart/form-data" onsubmit="return checkSourceCode()" disabled="">
+			<input type="hidden" name="stu_id" value="62010472">
+			<input type="hidden" name="chapter_id" value="17">
+			<input type="hidden" name="item_id" value="2">
+			<input type="hidden" name="exercise_id" value="1301281">
+			
+
+
+			<button class="btn btn-warning btn-lg " readonly=""> Not allow to submit !!! </button>			
+
+		</form>
+			</div>
+	
+
+
+  
+
+<script type="text/javascript">
+
+
+
+	
+</script>
+
+<!--- last submit -->
+<div class="row">
+	<div class="container">
+		<div class="panel panel-success" style="min-width:800px;text-align:left">
+			<div class="panel-heading">
+				 <div class="row">
+					 <div class="col-xs-8 text-left">							
+						<h2 style="color:blue;">Last submission :   </h2>
+					</div>
+					<div class="col-xs-4">
+						<h1 style="color:green;"><span class="glyphicon glyphicon-ok pull-right"></span> </h1>					</div>		
+				</div>
+			</div>
+
+			<div style="display:inline-block;"></div>
+
+			<div class="panel-body" style="text-align:left;">
+				<textarea id="sourcecode_content" style="text-align: left; display: none;" readonly="">'''
+ * กลุ่มที่  : 20010101
+ * 62010472 นวพรรษ ศรีบุญเรือง
+ * chapter : 17	item : 2	ครั้งที่ : 0003
+ * Assigned : Friday 27th of November 2020 01:51:38 PM --&gt; Submission : Friday 27th of November 2020 02:37:29 PM	
+ * Elapsed time : 45 minutes.
+ * filename : insertion_re.py
+'''
+print(" *** Insertion sort ***")
+li = [int(x) for x in input("Enter some numbers : ").split(" ")]
+count = 0
+state =True
+def insertion(li,):
+    global count
+    global state
+    for i in range(1,len(li)):
+        temp = li[i]
+        li2 = li.copy()
+        for j in range(i,-1,-1):
+            
+            count +=1
+            if li[j-1] &lt;= li[j] or j &lt;= 0:
+                if li == li2 :
+                    count +=1
+                li[j] = temp
+                count -= 1
+                break
+ 
+            if li[j-1] &gt; li[j] and j &gt; 0:
+                li[j-1],li[j] = li[j],li[j-1]
+    return li
+print("")
+print(insertion(li))
+print(f"Data comparison =  {count}")</textarea><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 688px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -13px; border-right-width: 17px; min-height: 688px; min-width: 899.9px; padding-right: 13px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">'''</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> * กลุ่มที่  : 20010101</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> * 62010472 นวพรรษ ศรีบุญเรือง</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> * chapter : 17<span class="cm-tab" role="presentation" cm-text="	"> </span>item : 2<span class="cm-tab" role="presentation" cm-text="	">    </span>ครั้งที่ : 0003</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span class="cm-tab-wrap-hack" style="padding-right: 0.1px;"> * Assigned : Friday 27th of November 2020 01:51:38 PM --&gt; Submission : Friday 27th of November 2020 02:37:29 PM<span class="cm-tab" role="presentation" cm-text="	">    </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> * Elapsed time : 45 minutes.</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> * filename : insertion_re.py</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">'''</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">print(" *** Insertion sort ***")</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">li = [int(x) for x in input("Enter some numbers : ").split(" ")]</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">count = 0</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">state =True</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">def insertion(li,):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    global count</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    global state</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">    for i in range(1,len(li)):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">        temp = li[i]</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">        li2 = li.copy()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">        for j in range(i,-1,-1):</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">            </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">            count +=1</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">            if li[j-1] &lt;= li[j] or j &lt;= 0:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">                if li == li2 :</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">                    count +=1</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 17px; width: 1px; border-bottom: 0px solid transparent; top: 688px;"></div><div class="CodeMirror-gutters" style="height: 705px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+			</div>				
+			
+		</div>
+	</div>
+</div>
+<!--- last submit -->
+
+
+<!--- Testcase -->
+<h1> Number of testcase : 4</h1>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading " style="font-size:24px;color:blue;">Testcase student: #1/4 
+				<span style="font-size:20px;color:blue;">
+				</span><div style="color:green;" class="glyphicon glyphicon-ok pull-right"></div>
+			</div>	
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+</textarea></code>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+</textarea></code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading " style="font-size:24px;color:blue;">Testcase student: #2/4 
+				<span style="font-size:20px;color:blue;">
+				</span><div style="color:green;" class="glyphicon glyphicon-ok pull-right"></div>
+			</div>	
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+</textarea></code>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+</textarea></code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading " style="font-size:24px;color:blue;">Testcase student: #3/4 
+				<span style="font-size:20px;color:blue;">
+				</span><div style="color:green;" class="glyphicon glyphicon-ok pull-right"></div>
+			</div>	
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+</textarea></code>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="9" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+</textarea></code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading " style="font-size:24px;color:blue;">Testcase student: #4/4 
+				<span style="font-size:20px;color:blue;">
+				</span><div style="color:green;" class="glyphicon glyphicon-ok pull-right"></div>
+			</div>	
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="10" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+</textarea></code>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="font-family: Courier;font-size: 16px;border:2px blue;"><code><textarea cols="80" rows="10" style="background:black;color:white;" readonly=""> *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+</textarea></code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div><!-- 1301281 num_of_testcase:4<br/>testcase_array : <pre>Array
+(
+    [0] => Array
+        (
+            [testcase_id] => 1663
+            [exercise_id] => 1301281
+            [testcase_content] => 1 2 3 4 5 6 7
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 
+            [testcase_output] =>  *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+
+            [item_pass] => yes
+            [output_to_show] =>  *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+
+            [testcase_student] =>  *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+
+        )
+
+    [1] => Array
+        (
+            [testcase_id] => 1664
+            [exercise_id] => 1301281
+            [testcase_content] => 7 6 5 4 3 2 1
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 
+            [testcase_output] =>  *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+
+            [item_pass] => yes
+            [output_to_show] =>  *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+
+            [testcase_student] =>  *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+
+        )
+
+    [2] => Array
+        (
+            [testcase_id] => 1665
+            [exercise_id] => 1301281
+            [testcase_content] => 2 3 4 5 6 7 8 9 10 1
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 
+            [testcase_output] =>  *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+
+            [item_pass] => yes
+            [output_to_show] =>  *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+
+            [testcase_student] =>  *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+
+        )
+
+    [3] => Array
+        (
+            [testcase_id] => 1666
+            [exercise_id] => 1301281
+            [testcase_content] => 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+            [active] => yes
+            [show_to_student] => yes
+            [testcase_note] => 
+            [testcase_output] =>  *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+
+            [item_pass] => yes
+            [output_to_show] =>  *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+
+            [testcase_student] =>  *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+
+        )
+
+)
+</pre>last_submit : <pre>Array
+(
+    [submission_id] => 14669
+    [stu_id] => 62010472
+    [exercise_id] => 1301281
+    [sourcecode_filename] => 62010472_17_02_0003.py
+    [marking] => 2
+    [time_submit] => 2020-11-27 14:37:29
+    [inf_loop] => No
+    [output] => a:4:{i:0;a:2:{s:6:"status";s:4:"PASS";s:8:"testcase";s:103:" *** Insertion sort ***
+Enter some numbers : 1 2 3 4 5 6 7
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  6
+";}i:1;a:2:{s:6:"status";s:4:"PASS";s:8:"testcase";s:104:" *** Insertion sort ***
+Enter some numbers : 7 6 5 4 3 2 1
+
+[1, 2, 3, 4, 5, 6, 7]
+Data comparison =  21
+";}i:2;a:2:{s:6:"status";s:4:"PASS";s:8:"testcase";s:121:" *** Insertion sort ***
+Enter some numbers : 2 3 4 5 6 7 8 9 10 1
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Data comparison =  17
+";}i:3;a:2:{s:6:"status";s:4:"PASS";s:8:"testcase";s:179:" *** Insertion sort ***
+Enter some numbers : 2 1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+
+[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Data comparison =  17
+";}}
+)
+</pre> status: passed --><!--- Testcase End -->
+
+
+	
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("sourcecode_content"), {
+					lineNumbers: true,
+					matchBrackets: true,
+					indentUnit: 4,
+					readonly: true,
+					mode: "text/python"
+			});
+	</script>
+			
+
+
+
+			</div>
+			<!-- row content -->
+
+		</div>
+		<!-- Page content -->
+		
+		<div class="clearfix"></div>
+
+		<!-- footer start -->
+		<footer class="container-fluid" style="background-color:LightSteelBlue;border:2px blue;margin-left:320px;margin-right:15px;">
+		  <p>Page rendered in <strong>0.1806</strong> seconds. 
+				CodeIgniter Version <strong>3.1.2</strong> Fri Nov 27 04:25:37</p>
+		  
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script> -->
+	<script src="./KCE_DS_Student2_files/jquery-3.1.1.min.js.download"></script>
+	<!-- <script src="http://161.246.127.86/20s1ds/assets/bootstrap-3.3.7/js/bootstrap.min.js"></script> -->
+    
+    <script>
+			var baseurl = "http://161.246.127.86/20s1ds/";
+			var user_role  = "student";
+			var user_id  = "62010472";
+	</script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./KCE_DS_Student2_files/bootstrap.min.js.download"></script>
+	<script src="./KCE_DS_Student2_files/datastruct.js.download" ;=""></script>
+
+	
+
+</div></body><script type="text/javascript" id="webrtc-control">(function () {
+      if (typeof navigator.getUserMedia !== "undefined") navigator.getUserMedia = undefined;
+      if (typeof window.MediaStreamTrack !== "undefined") window.MediaStreamTrack = undefined;
+      if (typeof window.RTCPeerConnection !== "undefined") window.RTCPeerConnection = undefined;
+      if (typeof window.RTCSessionDescription !== "undefined") window.RTCSessionDescription = undefined;
+      //
+      if (typeof navigator.mozGetUserMedia !== "undefined") navigator.mozGetUserMedia = undefined;
+      if (typeof window.mozMediaStreamTrack !== "undefined") window.mozMediaStreamTrack = undefined;
+      if (typeof window.mozRTCPeerConnection !== "undefined") window.mozRTCPeerConnection = undefined;
+      if (typeof window.mozRTCSessionDescription !== "undefined") window.mozRTCSessionDescription = undefined;
+      //
+      if (typeof navigator.webkitGetUserMedia !== "undefined") navigator.webkitGetUserMedia = undefined;
+      if (typeof window.webkitMediaStreamTrack !== "undefined") window.webkitMediaStreamTrack = undefined;
+      if (typeof window.webkitRTCPeerConnection !== "undefined") window.webkitRTCPeerConnection = undefined;
+      if (typeof window.webkitRTCSessionDescription !== "undefined") window.webkitRTCSessionDescription = undefined;
+    })(); </script><link type="text/css" id="dark-mode" rel="stylesheet" href="http://161.246.127.86/20s1ds/index.php/student/lab_exercise/17/2"><style type="text/css" id="dark-mode-custom-style"></style></html>

@@ -13,5 +13,6 @@ def insertion(input_data):
                 break
 
 
+
 insertion(input_data)
 print(input_data)

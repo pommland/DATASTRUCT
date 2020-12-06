@@ -1,0 +1,1 @@
+while len(lst)<len[li]:
